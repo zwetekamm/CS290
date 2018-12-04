@@ -1,0 +1,167 @@
+<!---------------------------------------------------------
+	Author: Zachary Wetekamm
+	Description: Implementation of basic HTML/CSS using a 
+	table, unordered lists, and GET/POST forms.
+---------------------------------------------------------->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<!--Table-->
+	<table style="width: 30%">
+		<caption>Random Exponents</caption>
+		
+		<thead>
+			<tr>
+				<th></th>
+				<th>n^0</th>
+				<th>n^2</th>
+				<th>n^3</th>
+				<th>n^5</th>
+				<th>n^10</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td class="head">1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			
+			<tr>
+				<td class="head">2</td>
+				<td>1</td>
+				<td>4</td>
+				<td>8</td>
+				<td>32</td>
+				<td>1024</td>
+			</tr>
+
+			<tr>
+				<td class="head">3</td>
+				<td>1</td>
+				<td>9</td>
+				<td>27</td>
+				<td>243</td>
+				<td>59049</td>
+			</tr>
+			
+			<tr>
+				<td class="head">5</td>
+				<td>1</td>
+				<td>25</td>
+				<td>125</td>
+				<td>3125</td>
+				<td>9765625</td>
+			</tr>
+			
+			<tr>
+				<td class="head">10</td>
+				<td>1</td>
+				<td>100</td>
+				<td>1000</td>
+				<td>100000</td>
+				<td>10000000000</td>
+			</tr>
+
+			<tfoot>
+				<tr>
+					<td colspan="2">2 col</td>
+					<td colspan="4">4 col</td>
+				</tr>
+			</tfoot>
+		</tbody>
+	
+	</table>
+
+	<!--Unordered List-->
+	<ul>
+		<li>Best Music</li>
+			<ul>
+				<li>Rock</li>
+			</ul>
+		
+		<li>Decent Music</li>
+			<ul>
+				<li>Rap</li>
+			</ul>
+		
+		<li>Worst Music</li>
+			<ul>
+				<li>Spoken Word</li>
+			</ul>
+	</ul>
+
+	<!--Outer content div-->
+	<div class="outer-content">
+		
+		<div class="inner-content">Inner Content</div>
+
+	</div>
+
+	<!--Container for Get and Post Forms-->
+	<div class="form">
+		<!--GET Form-->
+		<form method="get" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+			<fieldset>
+				<legend>GET Form</legend>
+				<label>Text:
+					<input type="text" name="text_input">
+				</label><br>
+
+				<label>Number:
+					<input type="number" name="numerical_input">
+				</label><br>
+
+				<label>Password:
+					<input type="password" name="password_input">
+				</label><br>
+
+				<label>Select Between: <br>
+					<input type="radio" name="candy" value="Snickers"> Snickers<br>
+					<input type="radio" name="candy" value="Skittles"> Skittles<br>
+					<input type="radio" name="candy" value="Mentos"> Mentos <br>
+				</label>
+				<input type="submit">
+			</fieldset>
+		</form>
+
+		<!--POST Form-->
+		<form method="post" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+			<fieldset>
+				<legend>POST Form</legend>
+				<label>Text:
+					<input type="text" name="text_input">
+				</label><br>
+
+				<label>Number:
+					<input type="number" name="numerical_input">
+				</label><br>
+
+				<label>Password:
+					<input type="password" name="password_input">
+				</label><br>
+
+				<label>Select Between: <br>
+					<input type="radio" name="candy" value="Snickers"> Snickers<br>
+					<input type="radio" name="candy" value="Skittles"> Skittles<br>
+					<input type="radio" name="candy" value="Mentos"> Mentos <br>
+				</label>
+				<input type="submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>

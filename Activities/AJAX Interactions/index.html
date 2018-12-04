@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Interactions</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><h2>Open Weather Map: GET</h2></legend>
+            <label>ZIP Code: </label><input type="text" id="zipInput">
+            <input type="submit" id="submitZIP" value="Submit"><br>
+            <span> or </span>
+            <label>City: </label><input type="text" id="cityInput">
+            <input type="submit" id="submitCity" value="Submit"><br>
+            <br>
+            <label>City: </label><label id="city"></label><br>
+            <label>Temperature: </label><label id="temp"></label><br>
+            <label>Pressure: </label><label id="pressure"></label><br>
+            <label>Humidity: </label><label id="humidity"></label><br>
+            <label>Wind Speed: </label><label id="wind"></label><br>
+            <label>Clouds: </label><label id="clouds"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Httpbin: POST</h2></legend>
+            <label>JSON String Input: </label><input type="text" id="jsonInput">
+            <input type="submit" id="submitPOST" value="Submit"><br>
+            <br>
+            <label>POST Output: </label> <label id="postOutput"></label>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
